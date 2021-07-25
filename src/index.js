@@ -1,23 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 
-import {createStore} from 'redux';
-import appReducers from './reducers/index';
-import { Provider} from 'react-redux';
+import { createStore } from "redux";
+import appReducers from "./reducers/index";
+import { Provider } from "react-redux";
 
-const store = createStore(
-  appReducers,
-  window.__REDUX_DEVTOOLS_EXTENSION__ / window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__()
-);
+const store = createStore(appReducers);
+
 ReactDOM.render(
-
-    <Provider store = {store}>
-      <App />
-    </Provider>,
-  document.getElementById('root')
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById("root")
 );
 
 reportWebVitals();

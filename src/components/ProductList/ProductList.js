@@ -1,5 +1,5 @@
-import React from 'react';
-import ProductItem from './../ProductItem/ProductItem';
+import React from "react";
+import ProductItem from "./../ProductItem/ProductItem";
 function ProductList(props) {
   return (
     <div className="panel panel-primary">
@@ -7,7 +7,6 @@ function ProductList(props) {
         <h3 className="panel-title">Danh sach san pham</h3>
       </div>
       <div className="panel-body">
-        
         <table className="table table-bordered table-hover">
           <thead>
             <tr>
@@ -19,16 +18,10 @@ function ProductList(props) {
               <th>Hanh Dong</th>
             </tr>
           </thead>
-          <tbody>
-            {props.chilren}
-          </tbody>
+          <tbody>{props.chilren}</tbody>
         </table>
-        
       </div>
     </div>
-
   );
 }
 export default ProductList;
-
-
